@@ -1,0 +1,49 @@
+.brand-logo {
+    width: 100px;
+}
+
+
+
+
+
+.slider h3
+.slider h5
+.brand h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.carousel h2 {
+    text-align: center;
+}
+
+.carousel a {
+    text-align: center;
+}
+
+
+
+
+
+section, footer {
+    padding: 20px 0;
+}
+
+
+
+.about {
+    font-size: 15px;
+}
+
+
+
+
+@media (max-width:670px) {
+    .brand-logo img {
+        margin-left: 75px;
+    }
+    .end h1 img {
+        max-width: 90%;
+    }
+}
