@@ -15,22 +15,30 @@
 
 
     <!-- navbar -->
-  <div class="navbar-fixed">
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-      </ul>
+    <div class="navbar-fixed">
     <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#"><i class="material-icons">search</i></a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">view_module</i></a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-logo"><img src="assets/img/Nusantara-removebg-preview.png" alt=""></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <div class="containerr">
+              <nav>
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </nav>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
 
@@ -39,7 +47,7 @@
 
 <ul class="sidenav" id="mobile-nav">
     <li><a href="#about">About Us</a></li>
-    <li><a href="#brand">Brands</a></li>
+    <li><a href="#gallery">Destination</a></li>
 </ul>
 
 
@@ -52,10 +60,9 @@
       <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      <li><a href="#home" class="btn-floating yellow darken-1"><i class="material-icons">home</i></a></li>
+      <li><a href="#gallery" class="btn-floating green"><i class="material-icons">add_a_photo</i></a></li>
+      <li><a href="#form" class="btn-floating blue"><i class="material-icons">border_color</i></a></li>
     </ul>
   </div>
 
@@ -66,32 +73,52 @@
 <!-- slider -->
 
 
-<div class="slider">
+<div class="slider scrollspy" id="home">
     <ul class="slides">
          <li>
-          <img src="assets/img/1.png.jpg"> 
+          <img src="assets/img/foto/p-7.jpg"> 
           <div class="caption left-align">
-           <h3>Best Sneakers in town!</h3>
-           <h5 class="light grey-text text-lighten-3">100% ORIGINAL WITH HIGH QUALITY</h5>
          </div>
         </li>
           <li>
-            <img src="assets/img/2.png.jpg"> 
+            <img src="assets/img/foto/p-15.jpg"> 
             <div class="caption right-align">
-             <h3>Best Sneakers in town!</h3>
-             <h5 class="light grey-text text-lighten-3">100% ORIGINAL WITH HIGH QUALITY</h5>
            </div>
           </li>
           <li>
-            <img src="assets/img/3.png.jpg"> 
+            <img src="assets/img/foto/p-4.jpg"> 
             <div class="caption center-align">
-             <h3>Best Sneakers in town!</h3>
-             <h5 class="light grey-text text-lighten-3">100% ORIGINAL WITH HIGH QUALITY</h5>
+             <h1>Explorasi di Gili Lawa  </h1>
            </div>
           </li>
      </ul>
 </div>
 
+<!-- box -->
+  <div class="box">
+
+  <div class="icon">
+      <img src="assets/img/hotel.png" alt="">
+      <h1>Penginapan</h1>
+  </div>
+
+  <div class="icon">
+      <img src="assets/img/monas.png" alt="">
+      <h1>Destinasi</h1>
+  </div>
+
+  <div class="icon">
+      <img src="assets/img/guide.png" alt="">
+      <h1>Guide</h1>
+  </div>
+
+  <div class="icon">
+      <img src="assets/img/restaurant.png" alt="">
+      <h1>Kuliner</h1>
+  </div>
+
+
+</div>
 
 
 
@@ -101,12 +128,12 @@
 <!-- discover with us -->
 
 
-<section id="about" class="about scrollspy ">
-    <div class="container">
+<section class="about scrollspy ">
+    <div class="container" style="padding-top: 150px;">
         <div class="row">
-            <h1 class="center light grey-text text-darken-3">Discover with Us</h1>
+            <h1 class="center light white-text text-darken-3 ">Discover with Us</h1>
             <div class="col m12 light center">
-                <h5>Find your best Holiday destination</h5>
+                <h5 class="white-text">Find your best Holiday destination</h5>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ut in sed alias quos praesentium rerum, laudantium dolor similique! Quam explicabo sint ullam! Vitae excepturi rerum aspernatur ad suscipit iusto..</p>
             </div>
            
@@ -120,11 +147,25 @@
 
 
 <!-- carousel -->
-<div class="carousel carousel-slider">
-  <a class="carousel-item" href="#one!"><img src="assets/img/p-1.jpg"></a>
-  <a class="carousel-item" href="#two!"><img src="assets/img/p-10.jpg"></a>
-  <a class="carousel-item" href="#three!"><img src="assets/img/p-11.jpg"></a>
-  <a class="carousel-item" href="#four!"><img src="assets/img/p-13.jpg"></a>
+<div class="carousel carousel-slider center scrollspy" id="gallery">
+  <div class="carousel-item center white-text">
+    <p class="white-text" style="z-index: 2;">Labuan bajo</p>
+    <a class="" href="#one!"></a><img src="assets/img/p-1.jpg" style="width:75%;"></a>
+    
+  </div>
+  <div class="carousel-item center ">
+    <p class="white-text" style="z-index: 2;">Banda Neira</p>
+    <a class="" href="#two!"><img src="assets/img/p-12.jpg" style="width:75;"></a>
+  </div>
+  <div class="carousel-item center">
+    <p class="white-text" style="z-index: 2;">Hatta Island</p>
+    <a class="" href="#three!"><img src="assets/img/p-5.jpg" style="width:75%;"></a>
+  </div>
+  <div class="carousel-item center">
+    <p class="white-text" style="z-index: 2;">NTT</p>
+    <a class="" href="#four!"><img src="assets/img/p-13.jpg" style="width:75%;"></a>
+  </div>
+  
 </div>
 
 
@@ -142,57 +183,39 @@
 <!-- What You Get  -->
 
 <section class="facility scrollspy" id="facility">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets/img/p-14.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets/img/p-11.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets/img/p-15.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
+  <div class="container">
+
+    <h1 class="service-title">About us </h1>
+   
+
+    <div class="service">
+      
+
+        <div class="galery scrollspy" id="about">
+            <img src="assets/img/p-20.jpeg" alt="">
+            <h1>Adventure</h1>
+            <p>Rasakan sensasi petualangan alam Nusantara dengan bimbingan Guide terbaik yang kami sediakan</p>
+            <a href="#">more</a>
         </div>
 
-    </div>
+        <div class="galery">
+            <img src="assets/img/p-21.jpeg" alt="">
+            <h1>Dinning</h1>
+            <p>Memberikan kenyamanan kepada anda yang ingin menikmati kuliner Nusantara dengan rekomendasi tempat dan makanan dari ahli kuliner di Indonesia.</p>
+            <a href="#">more</a>
+        </div>
+
+        <div class="galery">
+            <img src="assets/img/p-22.jpeg" alt="">
+            <h1>Relaxing</h1>
+            <p>Menikmati keindahan alam di Indonesia untuk tubuh anda bisa berelaksasi dengan nyaman tanpa memikirkan planing atau rencana liburan.</p>
+            <a href="#">more</a>
+        </div>
+
+    </div>   
+
+</div>
+
 </section>
 
 
@@ -211,22 +234,56 @@
 <!-- Form -->
 
 
-<div class="row">
-  <form class="col s12">
-    <div class="row">
-      <div class="input-field col s6">
-        <i class="material-icons prefix">account_circle</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">First Name</label>
+<div class="parallax-container scrollSpy" id="form">
+  <div class="parallax">
+    <img src="assets/img/p-6.jpg">
+  </div>
+  h
+  <div class="row">
+    <h1 class="center light white-text text-darken-3 ">Make it <span class="black-text" style="background-color: yellow; padding: 0 30px;">True</span></h1>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col m6 s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="nama" type="text" class="validate">
+          <label for="nama"> Nama</label>
+        </div>
+        <div class="input-field col m6 s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="telefon" type="tel" class="validate">
+          <label for="telefon">Telephone</label>
+        </div>
       </div>
-      <div class="input-field col s6">
-        <i class="material-icons prefix">phone</i>
-        <input id="icon_telephone" type="tel" class="validate">
-        <label for="icon_telephone">Telephone</label>
+      <div class="row">
+        <div class="input-field col m6 s6">
+          <i class="material-icons prefix">airplanemode_active</i>
+          <input id="destinasi" type="text" class="validate">
+          <label for="destinasi">Destinasi</label>
+        </div>
+        <div class="input-field col m6 s6">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="tel" class="validate">
+          <label for="email">Email</label>
+        </div>
       </div>
-    </div>
-  </form>
+      <div class="row">
+        <div class="input-field col m12 s12">
+          <i class="material-icons prefix">comment</i>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message</label>
+        </div>
+        <div class="row">
+          <div class="col m12 s12 center">
+            <button type="submit" class="waves-effect waves-light btn yellow black-text">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
+
+
+
 
 
 
@@ -251,28 +308,27 @@
 <!-- footer -->
 
 
-<footer class="page-footer">
+<footer class="page-footer white ">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      <div class="col l6 s12 left">
+        <h5 class="black-text">Our Contact</h5>
+        <p class="black-text text-lighten-4">Jl Dr Setiabudi no 193 Bandung</p>
+        <p class="black-text text-lighten-4">021 562193710</p>
       </div>
       <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          <li><a class="black-text text-lighten-3" href="https://twitter.com/?lang=en" target="_blank"><img src="assets/img/twitter-removebg-preview.png"  alt=""></a></li>
+          <li><a class="black-text text-lighten-3" href="https://www.youtube.com/c/WebProgrammingUNPAS/playlists" target="_blank"><img src="assets/img/yt-removebg-preview.png"  alt=""></a></li>
+          <li><a class="black-text text-lighten-3" href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><img src="assets/img/fb-removebg-preview.png"   alt=""></a></li>
+          <li><a class="black-text text-lighten-3" href="https://www.instagram.com/eikic1/" target="_blank"><img src="assets/img/ig-removebg-preview.png"  alt=""></a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
-    <div class="container">
-    © 2014 Copyright Text
-    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    <div class="container black-text">
+    © 2021 Copyright Kelompok 6
     </div>
   </div>
 </footer>
@@ -335,9 +391,7 @@
           M.Sidenav.init(sideNav);
 
 
-        const dropdown = document.querySelectorAll('.dropdown-trigger');
-        M.Dropdown.init(dropdown);
-
+       
 
         const slider = document.querySelectorAll('.slider');
           M.Slider.init(slider, {
@@ -354,9 +408,29 @@
         const fab = document.querySelectorAll('.fixed-action-btn');
         M.FloatingActionButton.init(fab);
 
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+        const scrollSpy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollSpy, {
+          scrollOffset: 50
+        } );
+
 
 
 
     </script>
   </body>
 </html>
+
+
+
+
+
+
+<!-- link -->
+<!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+<!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->

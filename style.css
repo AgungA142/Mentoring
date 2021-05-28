@@ -1,15 +1,67 @@
-.brand-logo {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500&family=Poppins:wght@200&display=swap');
+
+
+.brand-logo img{
     width: 100px;
+  
+}
+
+.nav-wrapper a {
+    padding-bottom: 10px;
+}
+
+nav {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 
 
-
+.box{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    background-color: white;
+    justify-content: center;
+    border-bottom-right-radius:30px ;
+    border-top-right-radius:30px ;
+    width: 85%;
+    position: absolute;
+    bottom: -300px;
+    z-index: 2;
+}
+.icon{
+    padding: 0 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.icon h1{
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-size: 30px;    }
+.icon img{
+    width: 100px;
+}
+.slider h1 {
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-weight: bolder;
+}
+.about {
+    padding-top: 100px;
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+}
 
 .slider h3
 .slider h5
 .brand h3 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
 }
 
 
@@ -18,8 +70,9 @@
     text-align: center;
 }
 
-.carousel a {
-    text-align: center;
+.carousel-item {
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
 }
 
 
@@ -37,13 +90,93 @@ section, footer {
 }
 
 
+body {
+    background-color: black;
+}
+
+.row {
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+}
+
+.container{
+    display:flex ;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+}
+.service-title {
+    color: white;
+    padding-bottom: 70px;
+}
+.service{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.galery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    margin: 0 80px;
+}
+.galery img{
+    width: 200px;
+    border-radius: 20px;
+}
+.galery h1{
+    color: white;
+    font-size: 30px;
+}
+.galery p{
+    font-size:12px !important; 
+   text-align:center;
+    color:white ;
+    font-family: 'Poppins', sans-serif;
+}
+.galery a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 30px;
+    transition: all ease-in 0.3s;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.galery a:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+}
+
+.page-footer ul {
+    display: flex;
+    flex-direction: row;
+}
+.page-footer ul li a img {
+    width: 50px;
+    margin: 0 20px;
+}
+.parallax-container {
+    padding-bottom: 100px;
+}
 
 
 @media (max-width:670px) {
     .brand-logo img {
         margin-left: 75px;
+        margin-bottom: 150px;
     }
     .end h1 img {
         max-width: 90%;
+
     }
 }
